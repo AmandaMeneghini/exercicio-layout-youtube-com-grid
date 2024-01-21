@@ -1,0 +1,71 @@
+body{
+    background-color: var(--background);
+    font-family: var(--font);
+}
+
+.highlight-video-content{
+    margin: 9px;
+}
+
+.description{
+    margin-top: 12px;
+    gap: 8px;
+}
+
+.highlight-video, .advertising, .thumbnail{
+    background-color: var(--hard-gray);
+}
+
+.highlight-video{
+    background-color: var(--hard-gray);
+    width: 543px;
+    height: 217px;
+    flex-shrink: 0;
+}
+
+.highlight-video-title{
+    font-size: 18px;
+}
+
+.highlight-video-views{
+    font-size: 14px;
+}
+
+.video-description{
+    font-size: 16px;
+}
+
+.advertising{
+    font-size: 13px;
+}
+
+.advertising p{
+    padding: 21px;
+}
+
+.recommended-video{
+    display: flex;
+    margin: 8px;
+
+}
+
+.thumbnail{
+    width: 101px;
+    height: 71px;
+    flex-shrink: 0;
+}
+
+.video-details{
+    display: block;
+    gap: 5px;
+    padding: 4px;
+}
+
+.video-details h1{
+    font-size: 14px;
+}
+
+.video-details p{
+    font-size: 11px;
+}
+
