@@ -3,14 +3,20 @@ body{
     font-family: var(--font);
 }
 
+.container{
+    display: grid;
+    grid-template: 1 / repeat(2, minmax(200px, 1fr));
+}
+
+.container aside{
+    grid-area: 1 / 2;
+}
+
 .highlight-video-content{
+    grid-area: 1 / 1;
     margin: 9px;
 }
 
-.description{
-    margin-top: 12px;
-    gap: 8px;
-}
 
 .highlight-video, .advertising, .thumbnail{
     background-color: var(--hard-gray);
@@ -21,6 +27,10 @@ body{
     width: 543px;
     height: 217px;
     flex-shrink: 0;
+}
+.description{
+    margin-top: 12px;
+    gap: 8px;
 }
 
 .highlight-video-title{
@@ -36,11 +46,14 @@ body{
 }
 
 .advertising{
+    display: flex;
     font-size: 13px;
+    
 }
 
 .advertising p{
     padding: 21px;
+    margin: auto;
 }
 
 .recommended-video{
@@ -56,7 +69,6 @@ body{
 }
 
 .video-details{
-    display: block;
     gap: 5px;
     padding: 4px;
 }
