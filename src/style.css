@@ -1,36 +1,28 @@
-body{
-    background-color: var(--background);
+html{
     font-family: var(--font);
 }
 
 .container{
     display: grid;
-    grid-template: 1 / repeat(2, minmax(200px, 1fr));
-}
-
-.container aside{
-    grid-area: 1 / 2;
+    grid-template-areas: "highlight-video-content propaganda" 
+                        "highlight-video-content videos-recommendation";
+    grid-template-columns: 1fr 270px;     
+    grid-template-rows: 56px 1fr;                   
+    max-width: 900px;
+    background-color: var(--background);
+    padding: 35px;
 }
 
 .highlight-video-content{
-    grid-area: 1 / 1;
-    margin: 9px;
+    grid-area: highlight-video-content;
 }
 
-
-.highlight-video, .advertising, .thumbnail{
-    background-color: var(--hard-gray);
+.highlight-video-content img{
+    margin-bottom: 12px;
 }
 
-.highlight-video{
-    background-color: var(--hard-gray);
-    width: 543px;
-    height: 217px;
-    flex-shrink: 0;
-}
 .description{
-    margin-top: 12px;
-    gap: 8px;
+    margin-bottom: 8px;
 }
 
 .highlight-video-title{
@@ -46,34 +38,24 @@ body{
 }
 
 .advertising{
-    display: flex;
-    font-size: 13px;
-    
+   grid-area: propaganda;
 }
 
-.advertising p{
-    padding: 21px;
-    margin: auto;
+.videos-recommendation{
+    grid-area: videos-recommendation;
 }
 
 .recommended-video{
     display: flex;
-    margin: 8px;
-
-}
-
-.thumbnail{
-    width: 101px;
-    height: 71px;
-    flex-shrink: 0;
+    margin-bottom: 8px;
 }
 
 .video-details{
-    gap: 5px;
-    padding: 4px;
+    margin-bottom: 5px;
+    margin-left: 4px;
 }
 
-.video-details h1{
+.video-details h2{
     font-size: 14px;
 }
 
