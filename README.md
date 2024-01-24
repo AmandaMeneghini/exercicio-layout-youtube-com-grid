@@ -7,6 +7,8 @@
 
 ### Tecnologias utilizadas
 
-<img src="./src/assets/logo-html-5-1536.png" style="width: 50px" alt="logo HTML">
-<img src="./src/assets/logo-css-3-2048.png" style="width: 50px" alt="logo CSS">
-<img src="./src/assets/logo-figma.png" style="width: 50px" alt="logo FIGMA">
+<div>
+  <img src="./src/assets/logo-html-5-1536.png" style="width: 50px" alt="logo HTML">
+  <img src="./src/assets/logo-css-3-2048.png" style="width: 50px" alt="logo CSS">
+  <img src="./src/assets/logo-figma.png" style="width: 50px" alt="logo FIGMA">
+</div>
